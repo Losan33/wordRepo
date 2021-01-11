@@ -18,27 +18,28 @@ class Tile{
     let playedBlankColor = color(184, 155, 86);
 
     if(this.committedToBoard){
-      if(this.points == 0){
-        fill(playedBlankColor);
-      }
-      else{
-        fill(playedColor);
-      }
+      //if(this.points == 0){
+        //fill(playedBlankColor);
+    //  }
+      //else{
+      //  fill(playedColor);
+      fill(209, 185, 117);
+    //  }
     }
     else{
-      if(this.points == 0){
-        fill(unplayedBlankColor);
-      }
-      else{
-        fill(unplayedColor);
-      }
+  //    if(this.points == 0){
+    //    fill(unplayedBlankColor);
+    //  }
+    //  else{
+    //    fill(unplayedColor);
+    //  }
+      fill(247, 216, 131);
     }
     stroke(0, 0, 0);
-    strokeWeight(2)
-  //  square(this.x, this.y, this.width);
+    strokeWeight(2);
 
-    fill(247, 216, 131);
-    rect(this.x, this.y, this.width, this.width);
+    square(this.x, this.y, this.width);
+
     fill(0, 0, 0);
     noStroke();
     if(this.letter != "BL"){
