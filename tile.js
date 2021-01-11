@@ -37,7 +37,7 @@ class Tile{
     strokeWeight(2)
   //  square(this.x, this.y, this.width);
 
-    fill(0, 0, 0);
+    fill(255, 0, 0);
     noStroke();
     if(this.letter != "BL"){
       textSize(this.width / 1.25);
